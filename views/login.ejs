@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>User Login Page</title>
+  </head>
+  <body
+    class="bg-zinc-900 text-white flex items-center justify-center min-h-screen"
+  >
+    <div class="w-full max-w-md bg-zinc-800 p-6 rounded-lg shadow-lg">
+      <h2 class="text-center text-xl font-semibold mb-4">Login Page</h2>
+      <form method="POST" action="/login" class="space-y-4">
+        <div>
+          <label for="password">Enter Your Email</label>
+          <input 
+            class="w-full bg-zinc-700 text-white p-3 rounded-lg outline-none focus:ring-2 focus:ring-zinc-500 placeholder:text-zinc-400" 
+            type="text" name="email" placeholder="Email" required />
+        </div>
+    
+        <div>
+          <label for="password">Enter Your Password</label>
+          <input 
+            class="w-full bg-zinc-700 text-white p-3 rounded-lg outline-none focus:ring-2 focus:ring-zinc-500 placeholder:text-zinc-400" 
+            type="password" name="password" placeholder="Password" required />
+        </div>
+        
+        <button 
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg transition duration-200">
+          Login
+        </button>
+      </form>
+      <div class="text-center mt-6 space-x-4 text-sm">
+        <a href="/" class="text-zinc-400 hover:text-white transition">Create Account</a>
+        <a href="/login" class="text-zinc-400 hover:text-white transition">Login</a>
+        <a href="/logout" class="text-zinc-400 hover:text-white transition">Logout</a>
+        <a href="/profile" class="text-zinc-400 hover:text-white transition">Profile</a>
+      </div>
+    </div>
+  </body>
+</html>
